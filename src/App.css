@@ -1,38 +1,197 @@
 .App {
   text-align: center;
+/*background-color: #D1B3C4;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+/*navbar style*/
+.navbar {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #735d78;
+  padding: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #F7D1CD;
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link a {
+  text-decoration: none;
+  color: #F7D1CD;
+}
+
+.nav-profile {
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  color: #F7D1CD;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.nav-profile img {
+  border-radius: 50%;
+}
+
+.nav-logout {
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  color: #F7D1CD;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/*Login page*/
+.signin {
+  background-color: #D1B3C4;
+  border: 1px solid #F7D1CD;
+  border-radius: 5px;
+  border-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
+}
+
+.signin p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #735D78;
+  color: #F7D1CD;
+  border: none;
+  border-radius: 9px;
+  padding: 25px 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #433845;
+}
+
+/*Creating new post*/
+.box {
+  border: 1px solid #F7D1CD;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #D1B3C4;
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box h2 {
+  color: #735D78;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="submit"] {
+  background-color: #735D78;
+  color: #F7D1CD;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #433845;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*Home page*/
+.homepage{
+  font-family: 'Arial', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #caadc4 ;
+  color: #403443;
+}
+.title h2{
+  border: 1px solid #a88cae;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.title h2 , h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 40%;
+  margin: 0 auto;
+}
+.title h3{
+  border: 1px inset #a88cae;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.body p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-left: 5%;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.footer p {
+  margin-left: 5%;
+  font-size: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer button {
+  background-color: transparent;
+  border: 1px inset #a697a9;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  outline: none;
 }
